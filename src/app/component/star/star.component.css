@@ -1,0 +1,17 @@
+i {
+  color: #e5e5e5;
+}
+
+i:hover {
+  cursor: pointer;
+//border:1px solid black;
+}
+
+.hover-fa-icon {
+  color: #fcbc04;
+}
+
+.gris {
+  color: rgb(138, 132, 132);
+  opacity: 0.5;
+}

@@ -1,0 +1,2 @@
+<fa-icon [icon]="faStar" *ngFor="let s of [1, 2, 3, 4, 5]"
+   (mouseenter)="mouseEnter(s)" (mouseleave)="mouseLeave()" class="{{ classHover(s) }}" (click)="onClick(s)"></fa-icon>

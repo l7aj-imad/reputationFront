@@ -1,0 +1,26 @@
+<form [formGroup]="evaluateForm" class="container">
+  <div class="row">
+    <label class="me-5"> what do you think of the price?</label>
+    <app-star class="col-3" (onRank)="onPrice($event)"></app-star>
+  </div>
+
+  <div class="row">
+    <label class="me-5">what do you think of the time...?</label>
+    <app-star class="col-3" (onRank)="onTime($event)"></app-star>
+  </div>
+  <div class="row">
+    <label class="me-5">what do you think of the quality of work?</label>
+    <app-star class="col-3" (onRank)="onQuality($event)"></app-star>
+  </div>
+  <div class="row">
+    <label class="me-5">what do you think of the personality of the professionnel?</label>
+    <app-star class="col-3" (onRank)="onPersonality($event)"></app-star>
+  </div>
+  <div>
+    <label class="me-5">Comment :</label>
+    <textarea class="form-control mt-3 mb-2" formControlName="comment" placeholder="Comment"></textarea>
+  </div>
+  <button class="btn btn-success" (click)="onEvaluate()">Evaluate</button>
+</form>
+
+
